@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="A searchable collection of peer-reviewed publications with the original English abstracts, authors, journals, and DOIs.">
+  <title>Research Publications | 团队科研成果库</title>
+  <style>
+    :root { --ink:#193c42; --muted:#5c7779; --teal:#246e70; --mint:#e8f2ef; --line:#d7e2de; --paper:#fbfaf5; --white:#fff; --orange:#c77844; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--paper); }
+    a { color:var(--teal); }
+    .wrap { max-width:1100px; margin:auto; padding:0 26px; }
+    .topbar { padding:25px 0 16px; display:flex; align-items:center; justify-content:space-between; gap:15px; border-bottom:1px solid var(--line); }
+    .brand { display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--ink); font-weight:700; font-size:13px; letter-spacing:.04em; }
+    .symbol { height:32px; width:32px; display:grid; place-items:center; border:1.5px solid var(--teal); border-radius:9px; color:var(--teal); font-size:20px; }
+    .topline { font-size:11px; color:var(--muted); letter-spacing:.13em; white-space:nowrap; text-transform:uppercase; }
+    .hero { padding:62px 0 35px; }
+    .eyebrow { color:var(--orange); letter-spacing:.14em; text-transform:uppercase; font-size:11px; font-weight:800; margin-bottom:14px; }
+    h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(41px,6.2vw,70px); letter-spacing:-.037em; font-weight:500; margin:0; line-height:1.05; }
+    .zh { font-size:clamp(17px,2.4vw,24px); font-weight:500; margin:20px 0 12px; }
+    .subtitle { max-width:760px; color:var(--muted); font-size:15px; line-height:1.9; margin:0; }
+    .metrics { display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin:33px 0 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .metric { padding:19px 24px; border-right:1px solid var(--line); }
+    .metric:first-child { padding-left:0; }.metric:last-child { border-right:0; }
+    .metric strong { font-size:27px; font-family:Georgia,serif; font-weight:600; }
+    .metric span { display:block; color:var(--muted); font-size:11px; margin-top:3px; letter-spacing:.04em; }
+    .finder { background:var(--white); border:1px solid var(--line); padding:19px; border-radius:15px; box-shadow:0 9px 29px #183a360c; margin-top:29px; }
+    .finder-row { display:grid; grid-template-columns:minmax(0,1fr) 145px 114px; gap:11px; }
+    .control { font:inherit; font-size:14px; border:1px solid #ccdad6; background:var(--white); color:var(--ink); border-radius:9px; min-width:0; padding:13px 14px; outline-offset:3px; }
+    .control:focus { border-color:var(--teal); box-shadow:0 0 0 3px #256f701a; outline:0; }
+    .search { width:100%; }
+    .plainbtn { border:1px solid #b9d0c8; background:var(--mint); border-radius:9px; color:var(--teal); font:inherit; font-size:12px; font-weight:700; cursor:pointer; padding:10px 13px; }
+    .plainbtn:hover { background:#d7e9e3; }
+    .filters-note { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:12px; font-size:12px; color:var(--muted); }
+    .results-head { display:flex; justify-content:space-between; align-items:center; gap:15px; padding:33px 0 12px; }
+    .results-head h2 { font-size:17px; font-weight:700; margin:0; }
+    #counter { color:var(--muted); font-size:12px; font-variant-numeric:tabular-nums; }
+    .paper { background:var(--white); border:1px solid var(--line); border-radius:14px; padding:25px 28px 22px; margin:14px 0; position:relative; }
+    .paper:before { content:""; position:absolute; top:28px; left:0; width:3px; height:31px; background:var(--teal); border-radius:0 3px 3px 0; }
+    .paper-meta { font-size:11px; font-weight:800; text-transform:uppercase; color:var(--teal); letter-spacing:.09em; }
+    .paper-title { font-family:Georgia,"Times New Roman",serif; font-size:21px; font-weight:600; line-height:1.48; margin:13px 0 13px; }
+    .authors { color:var(--ink); font-size:13px; line-height:1.65; margin:0 0 4px; }
+    .journal { color:var(--muted); font-size:13px; line-height:1.7; margin:0; }
+    details { border-top:1px solid var(--line); margin-top:18px; padding-top:14px; }
+    summary { display:flex; align-items:center; justify-content:space-between; cursor:pointer; color:var(--teal); font-size:13px; font-weight:700; list-style:none; user-select:none; }
+    summary::-webkit-details-marker { display:none; }
+    summary:after { content:"＋"; font-size:20px; font-weight:400; }
+    details[open] summary:after { content:"−"; }
+    .abstract { font-family:Georgia,"Times New Roman",serif; white-space:pre-wrap; color:#38585a; font-size:14px; line-height:1.87; margin:16px 0 4px; }
+    .actions { display:flex; flex-wrap:wrap; gap:9px; margin-top:19px; }
+    .linkbtn { text-decoration:none; }
+    .action { color:var(--teal); border:1px solid #c3d8d1; background:#f6faf8; border-radius:8px; font:inherit; font-size:12px; font-weight:600; padding:10px 12px; cursor:pointer; }
+    .action:hover { background:#eaf4f0; }
+    .status { color:var(--muted); font-size:13px; line-height:1.6; padding:22px 0; }
+    .footer { margin-top:40px; padding:28px 0 55px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); line-height:1.85; }
+    @media(max-width:680px) {
+      .wrap{padding:0 17px}.topline{font-size:9px}.topbar{padding:19px 0 14px}
+      .hero{padding-top:40px}.finder-row{grid-template-columns:1fr 1fr}
+      .search{grid-column:1/-1}.finder-row .plainbtn{grid-column:auto}
+      .metric{padding:14px 10px}.metric:first-child{padding-left:0}.metric strong{font-size:22px}
+      .metric span{font-size:10px}.paper{padding:20px 18px}.paper-title{font-size:18px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="topbar">
+    <a class="brand" href="./"><span class="symbol" aria-hidden="true">✳</span><span>RESEARCH PUBLICATIONS</span></a>
+    <span class="topline">PUBLICATIONS ARCHIVE</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Research · Publications · Knowledge</div>
+      <h1>Research Publications</h1>
+      <div class="zh">团队科研成果库</div>
+      <p class="subtitle">集中查阅已发表论文、原始英文摘要与 DOI。可按论文标题、作者、期刊、年份或摘要内容检索；团队成员无需下载文件。</p>
+      <div class="metrics">
+        <div class="metric"><strong id="nPapers">27</strong><span>PUBLICATIONS</span></div>
+        <div class="metric"><strong id="yearsRange">2016–2026</strong><span>PUBLICATION YEARS</span></div>
+        <div class="metric"><strong id="nAbstracts">27</strong><span>ORIGINAL ABSTRACTS</span></div>
+      </div>
+      <div class="finder" role="search">
+        <div class="finder-row">
+          <input class="control search" id="q" aria-label="论文检索" placeholder="搜索标题、作者、英文摘要、期刊或 DOI…">
+          <select class="control" id="year" aria-label="按发表年份筛选"><option value="">全部年份</option></select>
+          <button class="plainbtn" id="clear">清除筛选</button>
+        </div>
+        <div class="filters-note"><span>支持英文关键词搜索，例如 bearing、domain adaptation、time-frequency</span><span id="state">数据来自团队提供的原始文档</span></div>
+      </div>
+    </section>
+    <section aria-label="论文搜索结果">
+      <div class="results-head"><h2>Publications</h2><span id="counter" aria-live="polite"></span></div>
+      <div id="results"><p class="status">正在加载论文数据…</p></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div>Bibliographic records and original English abstracts supplied by the research team. Citation details should be verified against publishers before formal use.</div>
+    <div>Machine-readable records: <a href="./papers.json">papers.json</a> · Updates to the data file are reflected on this page.</div>
+  </footer>
+</div>
+<script>
+const PREVIEW_DATA = null;
+let records = [];
+const el = (id) => document.getElementById(id);
+const escapeHtml = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function render() {
+  const term = el("q").value.trim().toLowerCase();
+  const selectedYear = el("year").value;
+  const match = records.filter(p => (!selectedYear || String(p.year) === selectedYear) &&
+    [p.title,p.authors,p.publication,p.doi,p.abstract].join(" ").toLowerCase().includes(term));
+  el("counter").textContent = `显示 ${match.length} / ${records.length} 篇`;
+  const list = el("results");
+  if (!match.length) { list.innerHTML = '<p class="status">没有找到匹配的论文，请尝试其他关键词或年份。</p>'; return; }
+  list.innerHTML = match.map(p => `<article class="paper">
+    <div class="paper-meta">PAPER ${String(p.id).padStart(2,"0")} · ${p.year}</div>
+    <h3 class="paper-title">${escapeHtml(p.title)}</h3>
+    <p class="authors">${escapeHtml(p.authors)}</p>
+    <p class="journal">${escapeHtml(p.publication)}</p>
+    <details><summary>Original English Abstract</summary><p class="abstract">${escapeHtml(p.abstract)}</p></details>
+    <div class="actions">
+      <a class="action linkbtn" href="https://doi.org/${encodeURIComponent(p.doi).replace(/%2F/g,'/')}" target="_blank" rel="noopener noreferrer">查看 DOI ↗</a>
+      <button class="action" type="button" data-copy="${p.id}">复制引用信息</button>
+    </div>
+  </article>`).join("");
+  list.querySelectorAll("[data-copy]").forEach(btn => btn.addEventListener("click", async () => {
+    const p = records.find(p => p.id === Number(btn.dataset.copy));
+    const citation = `${p.authors}. ${p.title}. ${p.publication}. https://doi.org/${p.doi}`;
+    try { await navigator.clipboard.writeText(citation); btn.textContent = "已复制 ✓"; }
+    catch { btn.textContent = "复制失败，请选择文字"; }
+  }));
+}
+function setRecords(list) {
+  records = list.slice().sort((a,b) => b.year-a.year || a.id-b.id);
+  const years = [...new Set(records.map(p=>p.year))].sort((a,b)=>b-a);
+  const prev = el("year").value;
+  el("year").innerHTML = '<option value="">全部年份</option>' + years.map(y=>`<option value="${y}">${y}</option>`).join("");
+  if (years.includes(Number(prev))) el("year").value = prev;
+  el("nPapers").textContent = records.length;
+  el("nAbstracts").textContent = records.filter(p=>p.abstract).length;
+  if(years.length) el("yearsRange").textContent = `${years[years.length-1]}–${years[0]}`;
+  render();
+}
+el("q").addEventListener("input", render);
+el("year").addEventListener("change", render);
+el("clear").addEventListener("click", () => { el("q").value=""; el("year").value=""; render(); });
+(async function init(){
+  if (PREVIEW_DATA) {
+    setRecords(PREVIEW_DATA);
+    el("state").textContent = "本地预览（尚未发布）";
+    return;
+  }
+  try {
+    const response = await fetch("./papers.json", {cache:"no-store"});
+    if (!response.ok) throw Error("HTTP " + response.status);
+    const data = await response.json();
+    if (!Array.isArray(data)) throw Error("Invalid paper data");
+    setRecords(data);
+    el("state").textContent = "自动读取最新论文数据";
+  } catch(err) {
+    el("results").innerHTML = '<p class="status">论文数据加载失败。请确认 index.html 和 papers.json 上传到同一个目录。</p>';
+    el("state").textContent = "数据加载失败";
+  }
+})();
+</script>
+</body>
+</html>

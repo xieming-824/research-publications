@@ -1,0 +1,245 @@
+[
+  {
+    "id": 1,
+    "title": "Mechanism of skidding-induced IAS fault characteristic order shifts in tapered roller bearings considering electromechanical coupling",
+    "authors": "Jie Liang, Yuqing Liu, Yifan Li*, Ruixing Gu, Ming Xie, Zaigang Chen",
+    "publication": "Mechanical Systems and Signal Processing, 2026, 261:115089",
+    "year": 2026,
+    "doi": "10.1016/j.ymssp.2026.115089",
+    "abstract": "Under practical operating conditions, skidding is inevitable in tapered roller bearings, causing complex internal dynamics and significant shifts in instantaneous angular speed (IAS)-based fault characteristic orders, thereby degrading the accuracy of condition monitoring and early fault diagnosis. Existing research has yet to elucidate the underlying mechanism of skidding-induced fault characteristic order shifts and their relationship with skidding severity. To address this issue, an electromechanically coupled dynamic model of a faulty tapered roller bearing is developed by integrating multi-source nonlinear contact-friction interactions with a PI speed feedback control mechanism for dynamic torque regulation. Based on the proposed model, the mechanism of skidding-induced fault characteristic order shifts is systematically investigated, and the relationship between skidding severity and order shift is revealed. The results show that the proposed model comprehensively captures the transient angular speed response and nonlinear skidding evolution of the bearing. Crucially, skidding induces shifts in opposite directions in the fault characteristic orders depending on fault location: the fault characteristic order of outer-ring faults shifts toward lower orders, whereas that of inner-ring faults shifts toward higher orders. Furthermore, the absolute magnitude of the characteristic order shift is approximately proportional to the skidding rate, regardless of whether the fault is located on the inner ring or the outer ring. These findings highlight the necessity of incorporating skidding-induced kinematic deviations into IAS-based fault diagnosis frameworks for rolling bearings operating under complex conditions."
+  },
+  {
+    "id": 2,
+    "title": "Energy Divergence Direction Discrimination Guided Synchrosqueezing Transform for Enhanced Instantaneous Frequency Estimation and Time–Frequency Concentration",
+    "authors": "Youzhe Li, Yaocheng Yang, Yifan Li*, Ming J. Zuo",
+    "publication": "IEEE Transactions on Industrial Informatics, 2026. (Early Access)",
+    "year": 2026,
+    "doi": "10.1109/TII.2026.3735480",
+    "abstract": "Compared with conventional time–frequency analysis methods, the synchrosqueezing transform improves time–frequency concentration and enhances the readability of time–frequency representations (TFRs). However, most existing studies are developed under the assumption that signal energy diverges only along the frequency direction. Consequently, they focus exclusively on modeling and analyzing energy variations in the frequency direction, while overlooking energy components that diverge along the time direction. These neglected components may introduce instantaneous frequency (IF) estimation errors, causing the reassigned time–frequency coefficients to deviate from the true IF trajectories and resulting in time–frequency blurring. To achieve highly accurate IF estimation and highly concentrated TFRs, this article first establishes a mathematical model to theoretically investigate the energy divergence mechanism in the time–frequency plane, thereby revealing the multidirectional characteristics of energy divergence and their influence on IF estimation. Based on this theoretical analysis, an energy divergence direction discrimination-guided synchrosqueezing transform (EDDST) is proposed. Specifically, the proposed method constructs an energy divergence direction discrimination mechanism to identify and preserve energy components diverging only along the frequency direction while suppressing components containing time-direction divergence, thereby enabling accurate IF estimation and precise energy reassignment. Both systematic numerical simulations and experimental validation using measured vibration datasets are conducted to assess the effectiveness of the proposed EDDST approach. The obtained results indicate that the developed method provides improved IF estimation accuracy as well as superior time–frequency energy concentration when compared with state-of-the-art techniques."
+  },
+  {
+    "id": 3,
+    "title": "An unsupervised domain adaptation method for intelligent fault diagnosis based on target feature enhancement and feature-boundary alignment",
+    "authors": "Ming Xie, Jianxin Liu, Yifan Li*, Cai Yi",
+    "publication": "Journal of Intelligent Manufacturing, 2026, 37: 1109-1123",
+    "year": 2026,
+    "doi": "10.1007/s10845-025-02586-5",
+    "abstract": "Intelligent fault diagnosis is a core component of intelligent operation and maintenance in smart manufacturing. However, the lack of comprehensive labeled datasets in real-world applications limits diagnostic accuracy. While unsupervised domain adaptation methods have shown promise, they still face several challenges. First, existing methods rely heavily on source domain priors, which can lead to incorrect feature extraction in the target domain due to underfitting. Second, the average distribution alignment commonly used in existing methods struggles to effectively align each high-dimensional feature, leading to a deviation between the trained classification boundary (CB) and the target domain's ideal CB, which limits classification accuracy. To address these issues, a target domain feature enhancement and feature-boundary alignment network (TDFE-FBAN) is proposed. First, an autoencoder structured by a domain-shared encoder and a specialized decoder is designed to enhance target domain features. Through encoding and decoding, target domain features are encouraged to retain their domain-specific attributes, thus mitigating the influence of source domain priors. Second, a feature-boundary alignment approach is designed to fine-match the inter-domain feature distribution. The marginal distribution alignment scheme is first utilized to align the global distribution. Subsequently, based on unsupervised classification and CB optimization in the target domain, a CB alignment method is structured to align inter-domain class center distributions. To validate the effectiveness of the proposed method, twenty tasks are designed, encompassing both cross-condition and cross-device scenarios. The results demonstrate the optimal performance of TDFE-FBAN on all fault diagnosis tasks."
+  },
+  {
+    "id": 4,
+    "title": "Adaptive frequency attention-based interpretable Transformer network for few-shot fault diagnosis of rolling bearings",
+    "authors": "Keying Liu, Yifan Li*, Zhaoyang Cui, Guangdong Qi, Biao Wang",
+    "publication": "Reliability Engineering & System Safety, 2025, 263: 111271. (ESI highly cited paper, ESI hot paper)",
+    "year": 2025,
+    "doi": "10.1016/j.ress.2025.111271",
+    "abstract": "In recent years, deep learning-based approaches have demonstrated superior performance in few-shot fault diagnosis. Nevertheless, many of these methods lack explicit interpretability, making it difficult to intuitively understand their diagnostic logic. To tackle this issue, an interpretable deep learning model called the adaptive frequency attention-based interpretable Transformer network is proposed for few-shot fault diagnosis of rolling bearings. From a frequency interpretability perspective, the standard Transformer network architecture has been innovatively improved. First, an adaptive frequency attention mechanism is developed that quantifies the importance of various frequency components during the diagnostic process, adaptively identifying and emphasizing key frequency components closely associated with fault modes. This boosts both diagnostic performance and model interpretability. Second, to enhance the diversity of fault features under limited sample conditions, a multiscale convolutional architecture is developed to replace the linear projection layer in input embedding. This architecture employs parallel multiscale convolution kernels to extract both local and global fault features, enabling a comprehensive capture of fault information and further supporting the interpretability of the diagnostic model. Finally, Experiments on interpretable few-shot fault diagnosis are carried out on three rolling bearing datasets, and the diagnostic results further validate the effectiveness and interpretability of the proposed method."
+  },
+  {
+    "id": 5,
+    "title": "Extraction of instantaneous frequencies for signals with intersecting and intermittent trajectories",
+    "authors": "Yifan Li, Changqing Geng, Yaocheng Yang, Shiqian Chen, Ke Feng, Michael Beer",
+    "publication": "Mechanical Systems and Signal Processing, 2025, 223: 111835",
+    "year": 2025,
+    "doi": "10.1016/j.ymssp.2024.111835",
+    "abstract": "A multicomponent signal usually presents multiple trajectories with time-varying frequencies and amplitudes in a time–frequency distribution (TFD). One can extract the ridges corresponding to true signal components and then reconstruct them to recover signal signatures. Most current practices for ridge extraction assume that each trajectory runs throughout the entire time axis without cross-terms. However, this hypothesis is inconsistent with the truth of many measured signals. The increasing application occasions require further consideration of complicated intersecting and intermittent cases. This study addresses this issue and proposes a novel intersecting and intermittent trajectory tracking (IITT) approach. We first develop a data-driven method to effectively isolate peaks from noises in a TFD and generate a dependable peak spectrum. Then, we propose a dynamic optimization tracking function to decide upon the acceptance of the peaks corresponding to an individual component based on the purified spectrum. The IITT approach fully exploits the information from the raw signal without any prior knowledge while promising robustness to the variations of ridge numbers, ridges’ births and deaths, and its continuation and discontinuation. Two simulated and three measured signals are utilized to assess the performance of the proposed IITT. The success elements of the IITT are revealed and discussed in detail at the end of the paper."
+  },
+  {
+    "id": 6,
+    "title": "An adaptive Gaussian-guide feature alignment network for cross-condition and cross-machine fault diagnosis of rolling bearings",
+    "authors": "Guangdong Qi, Keying Liu, Ming Xie, Yifan Li*, Qing Ni",
+    "publication": "IEEE Sensors Journal, 2024, 24(24): 41647-41658",
+    "year": 2024,
+    "doi": "10.1109/JSEN.2024.3487234",
+    "abstract": "In recent years, transfer learning-based fault diagnosis methods have achieved significant performance. However, most studies directly map the source and target features into the same space, posing substantial challenges when handling complex and diverse data in practical engineering. In contrast, indirect feature alignment methods simplify this process with intermediate distributions but still suffer from negative transfer and rely on simplified distribution discrepancy measurement. To address these defects, an adaptive Gaussian-guided feature alignment network (AGFAN) is proposed for cross-condition and cross-machine fault diagnosis of rolling bearings. Specifically, to effectively reduce domain distribution discrepancy, a dynamic Gaussian-guided alignment method is developed to adaptively facilitate indirect feature alignment between the source and target features. Furthermore, to ensure the accuracy of distribution discrepancy measurement, a probability transformation estimation method is proposed for enhancing the feature alignment capability of the AGFAN. Fault diagnosis tasks on three bearing datasets are designed to validate the effectiveness of the proposed AGFAN. The research results indicate that the AGFAN outperforms related methods."
+  },
+  {
+    "id": 7,
+    "title": "Enhancing time-frequency concentration and accuracy using an improved time-frequency synchrosqueezing transform",
+    "authors": "Yaocheng Yang, Jialiang Zhang, Yifan Li*, Qing Ni, Biao Wang",
+    "publication": "IEEE Sensors Journal, 2024, 24(23): 39334-39343",
+    "year": 2024,
+    "doi": "10.1109/JSEN.2024.3472870",
+    "abstract": "The synchrosqueezing transform (SST) imp- roves the readability of time-frequency representation (TFR). The time-frequency multisqueezing transform (TFMST) is the most advanced SST method to date. It combines the advantages of frequency-reassigned SST (FSST) for harmonic-like components and time-reassigned SST (TSST) for impulsive-like components, thereby significantly enhancing the quality of TFR. In segmenting the original signal into harmonic-like and impulsive-like components, TFMST applies the standard of equal time-frequency concentration in both the frequency and time directions. However, achieving equal time-frequency concentration does not guarantee equal accuracy in these directions, which may lead to the misidentification of harmonic-like and impulsive-like components. Using TSST for harmonic-like components and FSST for impulsive-like components can result in time-frequency blurring. In addition, the strategy of first segmenting the signal into two components and then applying squeezing in TFMST can cause frequency oscillations at the segmentation boundaries. To achieve precise segmentation of impulsive-like and harmonic-like components and to produce a high-quality TFR, this article proposes an improved time-frequency synchrosqueezing transform (ITFST). ITFST features a more accurate segmentation standard and a more effective squeezing strategy. The former achieves precise segmentation of harmonic-like and impulsive-like components by ensuring equal reassignment accuracy in both the frequency and time directions. The latter first employs synchrosqueezing before segments the TFR to avoid processing truncated signals and effectively eliminates frequency oscillations at the segmentation boundaries. The effectiveness of ITFST is demonstrated through simulations and experiments, and its exceptional performance is thoroughly analyzed and discussed."
+  },
+  {
+    "id": 8,
+    "title": "An ensemble domain adaptation network with high-quality pseudo labels for rolling bearing fault diagnosis",
+    "authors": "Ming Xie, Jianxin Liu, Yifan Li*, Ke Feng, Qing Ni",
+    "publication": "IEEE Transactions on Instrumentation and Measurement, 2024, 73: 3518710",
+    "year": 2024,
+    "doi": "10.1109/TIM.2024.3385812",
+    "abstract": "The unsupervised domain adaptation (UDA) technique is aimed at minimizing the distribution discrepancy of interdomain (DDID) and, thus, bears immense potential for label scarcity in the target domain. Currently, most UDA methods frequently utilize pseudo labels to measure the distribution of target domain features. However, the level of pseudo labels in the reported studies is always modest, thus restricting the performance of UDA. To address the aforementioned deficiency, we develop an ensemble domain adaptation network (EDAN). It leverages ensemble learning (EL) to generate high-accuracy pseudo labels and couples domain adaptation (DA) as well as EL to guarantee pseudo labels’ robustness. Specifically, an EL network (ELN) with high generalization to the target domain is constructed based on multiple multiscale convolutional neural networks (CNNs) and a self-reinforce soft voting mechanism. Moreover, we dynamically couple ELN and the weighted balance distribution adaptation (WBDA) to upgrade EDAN’s classification stability, as well as the applicability of each CNN to the target domain. Twelve cross-condition fault diagnosis tasks and seven cross-device fault diagnosis tasks are designed based on four open-access rolling bearing datasets to verify the effectiveness of the proposed method. The research results indicate that EDAN outperforms five related approaches."
+  },
+  {
+    "id": 9,
+    "title": "Remaining useful life prediction across machines using multi-source adversarial online knowledge distillation",
+    "authors": "Keying Liu, Yifan Li*",
+    "publication": "Engineering Applications of Artificial Intelligence, 2024, 130: 107726",
+    "year": 2024,
+    "doi": "10.1016/j.engappai.2023.107726",
+    "abstract": "Deep transfer learning has been extensively developed in the remaining useful life prediction of rolling bearings because it can decrease the dependence on massive labeled data and robustly extract adaptive features. Most existing studies perform remaining useful life predictions across different working conditions within the same machine. Therefore, these methods are unsuitable for data with severe distribution drifts. Only a few studies investigate the remaining useful life prediction across different devices, but their success depends on the prerequisite that a large amount of labeled data exists. In brief, the models' applicabilities and prediction performances are significantly constrained toward industrial scenarios. To address these drawbacks, a multi-source adversarial online knowledge distillation approach is proposed for rolling bearing remaining useful life prediction across machines. A dual knowledge transfer mechanism, including multi-level domain adaptation and online knowledge distillation with dynamic weighting, is designed in the ensemble learning architecture. The proposed approach allows the more comprehensive extraction and transition of prognostic knowledge of multiple working conditions across different machines, thereby improving the performance of remaining useful life prediction. Experiments on two open-access rolling bearing datasets demonstrate the effectiveness and superiority of the proposed approach in terms of prediction accuracy."
+  },
+  {
+    "id": 10,
+    "title": "Use of vibration signal to estimate instantaneous angular frequency under strong nonstationary regimes",
+    "authors": "Yifan Li*, Changqing Geng, Ming J. Zuo, Xihui Liang",
+    "publication": "Mechanical Systems and Signal Processing, 2023, 200: 110571",
+    "year": 2023,
+    "doi": "10.1016/j.ymssp.2023.110571",
+    "abstract": "Instantaneous angular frequency (IAF) is an inherent characteristic associated with mechanical dynamics and contains adequate diagnostic information about rotating machinery, especially under speed fluctuation conditions. However, not all machines have the facility to install tachometers or encoders for tracking the instantaneous angular speed (IAS). An alternate solution is using vibration measurements and recovering the missing speed by exploring the acceleration signal. Thus, accurate IAF estimation is crucial to the consequent fault diagnosis. To date, multiple methods have been developed to address this issue, but most present poor results when dealing with the significant variations of IAS, which are common in practical applications. To overcome this deficiency, a new method consisting of time–frequency ridge extraction and an improved multi-order probabilistic approach is proposed in the paper. The described method fully exploits the information within the vibration response while promising robustness to the variations of the running regimes. The proposed method is demonstrated by assessing its performance on three benchmark data sets and two experimental signals collected from our laboratory and comparing them with five advanced IAF estimation methods."
+  },
+  {
+    "id": 11,
+    "title": "Multioperator morphological undecimated wavelet for wheelset bearing compound fault detection",
+    "authors": "Yifan Li, Ke Feng, Yuejian Chen, Zaigang Chen",
+    "publication": "IEEE Transactions on Instrumentation and Measurement, 2023, 72: 7504612",
+    "year": 2023,
+    "doi": "10.1109/TIM.2023.3284937",
+    "abstract": "Wheelset bearing compound faults are observed as impulses in the vibration measurements but immersed in noise. The morphological undecimated wavelet (MUW) is an effective tool for recovering fault-related impulses from vibration mixtures. To date, the reported MUWs adopt an identical morphological operator (MO) in each level of decomposition without exception. However, effectively capturing signal signatures by repeatedly using a noise elimination operator, an impulse extraction operator, or even the product of two operators is unattainable. Spurred by this deficiency, in this article, we propose a multioperator MUW (MOMUW). A three-level structure: noise reduction, impulse extraction, and further denoising and feature enhancement, is developed in the MOMUW, and different MOs are designed for each decomposition level to more purposefully denoise and extract impulse features. The developed MOMUW is applied to measured wheelset bearing vibration data, with the results demonstrating that it can accurately detect wheelset bearing compound faults. Compared with the reported MUWs, the proposed approach presents superior performance. Furthermore, MUWs with varying operators and levels are analyzed and compared. Their success and failure in bearing fault diagnosis are interpreted and discussed, laying a theoretical foundation for constructing new MUWs."
+  },
+  {
+    "id": 12,
+    "title": "Automated and adaptive ridge extraction for rotating machinery fault detection",
+    "authors": "Yifan Li, Yaocheng Yang, Ke Feng, Ming J. Zuo, Zaigang Chen",
+    "publication": "IEEE/ASME Transactions on Mechatronics, 2023, 28(5): 2565-2575. (ESI highly cited paper)",
+    "year": 2023,
+    "doi": "10.1109/TMECH.2023.3239159",
+    "abstract": "A ridge in a time-frequency graph (TFG) describes the relationship of a signal component's instantaneous frequencies over time. Accurate ridge extraction from TFGs is beneficial for assessing machine health conditions without rotational speed measurement. This article proposes a new automated and adaptive ridge extraction (AARE) method. The AARE develops an adaptive edge detection strategy to avoid excessive interferences when searching for a ridge. Besides, the AARE creates a balance between exploring peak amplitudes and guaranteeing a continuous curve through an adaptive core function, which is constructed entirely based on the instantaneous characteristics of the analyzed signal. The unique advantage of the proposed method is that it dispenses with the tuning of parameters and runs automatically. Thus, human intervention is minimized. Gear and bearing vibration signals collected under variable speed conditions are applied to investigate and demonstrate the performance of AARE. In addition, some challenging cases are analyzed and discussed. Results show that AARE has a superior performance in ridge extraction compared with the reported approaches."
+  },
+  {
+    "id": 13,
+    "title": "Time-frequency ridge estimation: An effective tool for gear and bearing fault diagnosis at time-varying speeds",
+    "authors": "Yifan Li*, Xin Zhang, Zaigang Chen, Yaocheng Yang, Changqing Geng, Ming J. Zuo",
+    "publication": "Mechanical Systems and Signal Processing, 2023, 189: 110108. (ESI highly cited paper, ESI hot paper)",
+    "year": 2023,
+    "doi": "10.1016/j.ymssp.2023.110108",
+    "abstract": "For a rotary machine vibration signal collected under variable speed conditions, its time–frequency representation (TFR) contains abundant oscillatory components with time-varying amplitudes and frequencies. A single component with a sequence of peaks in the TFR is called a ridge. Accurate ridge detection from TFRs can boost rotary machine health condition assessment without rotation speed measurement. Nowadays, cost function ridge estimation and fast path optimization ridge estimation are the most widely utilized techniques. However, the unreasonable kernel function definitions and inappropriate search region selections significantly restrict the performance of instantaneous frequency estimation of target ridges. To address the deficiencies, this paper proposes a novel time–frequency ridge estimation (TFRE) method. The TFRE integrates a new cost kernel function and an adaptive search region detection principle. For the former, it comprehensively considers the trade-off between seeking peaks and ensuring the smoothness of a ridge. The latter varies the search bandwidth in real-time according to instantaneous signal signatures to effectively isolate interferences and neighboring ridges. A unique advantage of the proposed method is that it dispenses with the tuning of parameters. As a consequence, human intervention is minimized. Experimental gear and bearing vibration signals were analyzed to demonstrate the performance of the TFRE. Results indicated that the proposed TFRE is characterized by superior ridge estimation performance compared to the state-of-the-art methods."
+  },
+  {
+    "id": 14,
+    "title": "A modified bidirectional long short-term neural network for rail vehicle suspension fault detection",
+    "authors": "Yuejian Chen, Gang Niu, Yifan Li*, Yongbo Li",
+    "publication": "Vehicle System Dynamics, 2023, 61(12): 3136-3160",
+    "year": 2023,
+    "doi": "10.1080/00423114.2022.2158879",
+    "abstract": "Faults of railway suspension units may endanger vehicle operation safety. Therefore, timely fault detection of railway suspension is necessary. The reported fault detection method that uses Bidirectional Long Short-Term Memory (BiLSTM) neural network in a denoising autoencoder fashion suffers from a shortcoming that the condition monitoring data under faulty states needs to be ultilized to determine the added noise level. Such data is not always available in practice. In this paper, we modified the BiLSTM such that the output data point is excluded from the input when predicting this specific output data point. The requirement of using condition monitoring data under faulty states is therefore relaxed, as the modified BiLSTM is free from determining the level of added noise. A case study on railway suspension fault detection was presented. We used the railway vehicle dynamics model to generate car body vibration under healthy, three levels of reduced first suspension stiffness states, and three levels of reduced first suspension damping states. We compared the performance of the modified BiLSTM with the linear autoregression model, LSTM, and BiLSTM-DAE models. The results have shown that the modified BiLSTM-based fault detection method performs the best, having the highest area under the receiver operating curve."
+  },
+  {
+    "id": 15,
+    "title": "Adaptive cost function ridge estimation for rolling bearing fault diagnosis under variable speed conditions",
+    "authors": "Yifan Li*, Yaocheng Yang, S.S. Afshari, Xihui Liang, Zaigang Chen",
+    "publication": "IEEE Transactions on Instrumentation and Measurement, 2022, 71: 3503512",
+    "year": 2022,
+    "doi": "10.1109/TIM.2022.3149326",
+    "abstract": "Rolling bearing health condition evaluation under time-varying operating speed requires information about shaft rotational speed. However, it is not always feasible to install a sensor such as a tachometer or an encoder to collect rotational speed signals due to space limitations or safety considerations. Time-frequency ridge estimation is an alternative approach that directly extracts the fault-related characteristic curves in a time–frequency representation (TFR) without phase reference. The cost function ridge estimation (CFRE) is the most widely used contemporary ridge estimation method. However, there is no explicit principle for the selection of search bandwidth. Moreover, the definitions of weight factor and cost function lack rationality, which causes the CFRE to degrade partially into coarse direct maximum ridge estimation (DMRE) or possibly extract the least frequency-varying curve. A time–frequency ridge estimation method, which is called adaptive CFRE (ACFRE), is developed in this study to address these deficiencies. We improve the original cost function and redefine its mathematical model to better balance searching for peak amplitude and guaranteeing a continuous curve. Numerical simulations and experimental investigations show that the proposed ACFRE is more robust to interferences derived from adjacent curves and noise than CFRE and another well-known ridge estimation approach, fast path optimization (FPO). The proposed method has a smaller root mean square error (RMSE) in estimating bearing characteristics under variable speed conditions."
+  },
+  {
+    "id": 16,
+    "title": "Iterative characteristic ridge extraction for bearing fault detection under variable rotational speed conditions",
+    "authors": "Yifan Li,, Yaocheng Yang, Yuejian Chen, Zaigang Chen",
+    "publication": "ISA Transactions, 2022, 119: 172-183",
+    "year": 2022,
+    "doi": "10.1016/j.isatra.2021.02.031",
+    "abstract": "Ridge extraction is an effective tacholess order tracking technique for the fault detection of bearings under time-varying speed conditions. Cost function ridge detection (CFRD) is the most widely used ridge detection method. However, improper bandwidth selection and unreasonable cost function construction significantly restrict the performance of the CFRD. To address the two shortcomings of the CFRD, an improved CFRD (ICFRD) method is firstly proposed in this paper. The ICFRD integrates an adaptive search bandwidth determination technique that varies the search region with signal signatures, as well as a novel cost function that comprehensively considers the trade-off between ridge amplitude and smoothness. An iterative characteristic ridge extraction (ICRE) strategy is then presented based on the ICFRD to extract multiple characteristic ridges in a time–frequency plane automatically. The average frequency ratios between the extracted characteristic ridges are calculated to estimate bearing fault characteristic orders and therefore detect bearing faults. The performance of the proposed method was tested using simulated signals and experimental vibration signals collected from a machinery test rig. Results show that the ICRE outperforms the conventional CFRD in terms of detecting bearing faults under variable speed conditions. The average relative errors between the extracted instantaneous frequencies and the theoretical ones of the ICRE are 0.85%, 2.11% and 0.63% for inner race fault, outer race fault, and healthy bearing vibration signal, respectively. These values are much smaller than the results of using the CFRD."
+  },
+  {
+    "id": 17,
+    "title": "Minimum correlated generalized Lp/Lq deconvolution for recovering repetitive impacts from a vibration mixture",
+    "authors": "Liu He, Yifan Li*, Yuandong Liu, Jianhui Lin",
+    "publication": "IEEE Sensors Journal, 2021, 21(2): 2043-2054",
+    "year": 2021,
+    "doi": "10.1109/JSEN.2020.3021213",
+    "abstract": "Repetitive impact detection (RID) is a core topic in bearing fault detection. The deconvolution-based method is an effective method in RID. Many deconvolution algorithms have been developed for this purpose. Simplified sparse filtering (SSF) is a typical deconvolution-based method, which has been successfully applied in RID due to its remarkable performance and fast computing speed. SSF generates an inverse filter by minimizing the generalized Lp/Lq (G-Lp/Lq) norm. The performance of SSF depends on the properties of G-Lp/Lq. However, G-Lp/Lq cannot characterize the periodicity of a specific period. Therefore, SSF cannot effectively detect multiple fault components at the same time and achieve compound fault detection. Additionally, when the signal-to-noise ratio (SNR) of the fault signal is extremely low, SSF might not recover the repetitive impacts from the measured signals. In order to improve these two shortcomings of SSF, we extend the G-Lp/Lq norm from time domain to signal correlation domain, and propose a correlated generalized Lp/Lq norm (CG-Lp/Lq). The proposed CG-Lp/Lq norm uses the enhanced periodicity which is obtained by calculating the correlation of repetitive impacts to realize the characterization of repetitive impacts with a specific period. Based on the proposed CG-Lp/Lq, a new deconvolution algorithm, the minimum correlated generalized Lp/Lq deconvolution (MCG-Lp/Lq-D) algorithm, is designed. The superiority of the proposed MCG-Lp/Lq-D is validated by both simulated and experimental data. The results demonstrate that MCG-Lp/Lq-D can recover the repetitive impacts, submerged in heavy noise, from the vibration mixture, and it can achieve compound fault detection."
+  },
+  {
+    "id": 18,
+    "title": "Wheelset bearing fault detection using morphological signal and image analysis",
+    "authors": "Yifan Li, Xihui Liang, Yuejian Chen, Zaigang Chen, Jianhui Lin",
+    "publication": "Structural Control and Health Monitoring, 2020, 27(11): e2619",
+    "year": 2020,
+    "doi": "10.1002/stc.2619",
+    "abstract": "The detection of wheelset bearing faults is of extreme importance for railway vehicle operation safety. Wheelset bearing faults induce impulses in vibration signals, which are hard to detect because of signal modulation and environmental noise. To suppress noise and identify these impulses effectively, we propose a method that leverages morphological signal and image processing techniques. The proposed method mainly includes two aspects: a novel double cross-correlation operation for noise reduction and an improved image processing algorithm for highlighting the fault features. The performance of the proposed method was tested using real vibration signals collected from a wheelset bearing test rig and compared with other advanced methods reported in the literature. By analysing two wheelset bearing faults, namely, an outer race fault and a pin roller fault, the proposed method is demonstrated to be more effective in the detection of wheelset bearing faults."
+  },
+  {
+    "id": 19,
+    "title": "Railway bearing and cardan shaft fault diagnosis via an improved morphological filter",
+    "authors": "Yifan Li, Ming J. Zuo, Zaigang Chen, Jianhui Lin",
+    "publication": "Structural Health Monitoring, 2020, 19(5): 1471-1486",
+    "year": 2020,
+    "doi": "10.1177/1475921719886067",
+    "abstract": "Railway faults are usually observed as impulses in the vibration signal, but they are mostly immersed in noise. To effectively remove noise and identify the impulses, an improved morphological filter is proposed in this article. The proposal focuses on two aspects: a novel gradient convolution operator is proposed for feature extraction, and a new fault sensitivity measurement algorithm is proposed for scale selection because a morphological filter’s effectiveness is mainly determined by these two elements. The performance of the improved morphological filter is evaluated with real vibration signals measured from train’s axle bearings and cardan shafts. From the analysis of three sets of railway faults, the results indicate that the proposed morphological filter effectively detects the faults. Compared with three reported morphological filters, the proposed method has better diagnosis effectiveness."
+  },
+  {
+    "id": 20,
+    "title": "Train axle bearing fault detection using a feature selection scheme based multi-scale morphological filter",
+    "authors": "Yifan Li, Xihui Liang, Jianhui Lin, Yuejian Chen, Jianxin Liu",
+    "publication": "Mechanical Systems and Signal Processing, 2018, 101: 435-448",
+    "year": 2018,
+    "doi": "10.1016/j.ymssp.2017.09.007",
+    "abstract": "This paper presents a novel signal processing scheme, feature selection based multi-scale morphological filter (MMF), for train axle bearing fault detection. In this scheme, more than 30 feature indicators of vibration signals are calculated for axle bearings with different conditions and the features which can reflect fault characteristics more effectively and representatively are selected using the max-relevance and min-redundancy principle. Then, a filtering scale selection approach for MMF based on feature selection and grey relational analysis is proposed. The feature selection based MMF method is tested on diagnosis of artificially created damages of rolling bearings of railway trains. Experimental results show that the proposed method has a superior performance in extracting fault features of defective train axle bearings. In addition, comparisons are performed with the kurtosis criterion based MMF and the spectral kurtosis criterion based MMF. The proposed feature selection based MMF method outperforms these two methods in detection of train axle bearing faults."
+  },
+  {
+    "id": 21,
+    "title": "An enhanced morphology gradient product filter for bearing fault detection",
+    "authors": "Yifan Li, Ming J. Zuo, Yuejian Chen, Ke Feng",
+    "publication": "Mechanical Systems and Signal Processing, 2018, 109:166-184",
+    "year": 2018,
+    "doi": "10.1016/j.ymssp.2018.03.002",
+    "abstract": "This paper presents a signal processing scheme, namely enhanced morphology gradient product filter (EMGPF), for rolling element bearing fault detection. In this scheme, a morphology gradient product operation (MGPO) is firstly proposed to extract impulsive features of a raw signal according to a comprehensive investigation of the working mechanism of the reported morphological operations. Then, a higher-order spectrum analysis method, the third-order cumulant slice spectrum, is used to improve the performance of the MGPO based morphology filter for the purpose of highlighting fault features further. Experimental vibration signals were employed to evaluate the effectiveness of the proposed EMGPF. Results show that the proposed method has a superior performance in extracting fault features of defective rolling element bearing over four reported morphology filters."
+  },
+  {
+    "id": 22,
+    "title": "Development of a morphological convolution operator for bearing fault detection",
+    "authors": "Yifan Li, Xihui Liang, Weiwei Liu, Yan Wang",
+    "publication": "Journal of Sound and Vibration, 2018, 421: 220-233",
+    "year": 2018,
+    "doi": "10.1016/j.jsv.2018.02.014",
+    "abstract": "This paper presents a novel signal processing scheme, namely morphological convolution operator (MCO) lifted morphological undecimated wavelet (MUDW), for rolling element bearing fault detection. In this scheme, a MCO is first designed to fully utilize the advantage of the closing & opening gradient operator and the closing–opening & opening–closing gradient operator for feature extraction as well as the merit of excellent denoising characteristics of the convolution operator. The MCO is then introduced into MUDW for the purpose of improving the fault detection ability of the reported MUDWs. Experimental vibration signals collected from a train wheelset test rig and the bearing data center of Case Western Reserve University are employed to evaluate the effectiveness of the proposed MCO lifted MUDW on fault detection of rolling element bearings. The results show that the proposed approach has a superior performance in extracting fault features of defective rolling element bearings. In addition, comparisons are performed between two reported MUDWs and the proposed MCO lifted MUDW. The MCO lifted MUDW outperforms both of them in detection of outer race faults and inner race faults of rolling element bearings."
+  },
+  {
+    "id": 23,
+    "title": "Fault detection method for railway wheel flat using an adaptive multiscale morphological filter",
+    "authors": "Yifan Li, Ming J. Zuo, Jianhui Lin, Jianxin Liu",
+    "publication": "Mechanical Systems and Signal Processing, 2017, 84:642-658",
+    "year": 2017,
+    "doi": "10.1016/j.ymssp.2016.07.009",
+    "abstract": "This study explores the capacity of the morphology analysis for railway wheel flat fault detection. A dynamic model of vehicle systems with 56 degrees of freedom was set up along with a wheel flat model to calculate the dynamic responses of axle box. The vehicle axle box vibration signal is complicated because it not only contains the information of wheel defect, but also includes track condition information. Thus, how to extract the influential features of wheels from strong background noise effectively is a typical key issue for railway wheel fault detection. In this paper, an algorithm for adaptive multiscale morphological filtering (AMMF) was proposed, and its effect was evaluated by a simulated signal. And then this algorithm was employed to study the axle box vibration caused by wheel flats, as well as the influence of track irregularity and vehicle running speed on diagnosis results. Finally, the effectiveness of the proposed method was verified by bench testing. Research results demonstrate that the AMMF extracts the influential characteristic of axle box vibration signals effectively and can diagnose wheel flat faults in real time."
+  },
+  {
+    "id": 24,
+    "title": "Diagonal slice spectrum assisted optimal scale morphological filter for rolling element bearing fault diagnosis",
+    "authors": "Yifan Li, Xihui Liang, Ming J. Zuo",
+    "publication": "Mechanical Systems and Signal Processing, 2017, 85:146-161",
+    "year": 2017,
+    "doi": "10.1016/j.ymssp.2016.08.019",
+    "abstract": "This paper presents a novel signal processing scheme, diagonal slice spectrum assisted optimal scale morphological filter (DSS-OSMF), for rolling element fault diagnosis. In this scheme, the concept of quadratic frequency coupling (QFC) is firstly defined and the ability of diagonal slice spectrum (DSS) in detection QFC is derived. The DSS-OSMF possesses the merits of depressing noise and detecting QFC. It can remove fault independent frequency components and give a clear representation of fault symptoms. A simulated vibration signal and experimental vibration signals collected from a bearing test rig are employed to evaluate the effectiveness of the proposed method. Results show that the proposed method has a superior performance in extracting fault features of defective rolling element bearing. In addition, comparisons are performed between a multi-scale morphological filter (MMF) and a DSS-OSMF. DSS-OSMF outperforms MMF in detection of an outer race fault and a rolling element fault of a rolling element bearing."
+  },
+  {
+    "id": 25,
+    "title": "A new strategy of using a time-varying structure element for mathematical morphological filtering",
+    "authors": "Yifan Li, Xihui Liang, Ming J. Zuo",
+    "publication": "Measurement, 2017, 106: 53-65",
+    "year": 2017,
+    "doi": "10.1016/j.measurement.2017.04.032",
+    "abstract": "This paper presents a novel signal processing scheme, namely time-varying morphological filtering (TMF), for rolling element bearing fault detection. In contrast with the multiscale morphological filtering (MMF) method, the structure element (SE) used in TMF is no longer fixed. It adjusts adaptively according to the extreme points of a signal so that the raw signal can be fit more accurately. In addition, the MMF needs to execute morphological operations multiple times, whereas the TMF can finish the filtering in one time operation. Consequently, TMF has a significant advantage in terms of computation efficiency. Experimental vibration signals collected from a bearing test rig are employed to evaluate the effectiveness of TMF. The results show that the proposed method can extract fault features of defective rolling element bearings with high computational efficiency. Moreover, five SEs are compared for TMF. The results show that the Dolph-Chebyshev SE performs best."
+  },
+  {
+    "id": 26,
+    "title": "Detection of bearing faults using a novel adaptive morphological update lifting wavelet",
+    "authors": "Yifan Li, Ming J. Zuo, Ke Feng, Yuejian Chen",
+    "publication": "Chinese Journal of Mechanical Engineering, 2017, 30(6):1305-1313",
+    "year": 2017,
+    "doi": "10.1007/s10033-017-0186-1",
+    "abstract": "The current morphological wavelet technologies utilize a fixed filter or a linear decomposition algorithm, which cannot cope with the sudden changes, such as impulses or edges in a signal effectively. This paper presents a novel signal processing scheme, adaptive morphological update lifting wavelet (AMULW), for rolling element bearing fault detection. In contrast with the widely used morphological wavelet, the filters in AMULW are no longer fixed. Instead, the AMULW adaptively uses a morphological dilation-erosion filter or an average filter as the update lifting filter to modify the approximation signal. Moreover, the nonlinear morphological filter is utilized to substitute the traditional linear filter in AMULW. The effectiveness of the proposed AMULW is evaluated using a simulated vibration signal and experimental vibration signals collected from a bearing test rig. Results show that the proposed method has a superior performance in extracting fault features of defective rolling element bearings."
+  },
+  {
+    "id": 27,
+    "title": "Railway wheel flat detection based on improved empirical mode decomposition",
+    "authors": "Yifan Li, Jianxin Liu, Yan Wang",
+    "publication": "Shock and Vibration, 2016, 4879283",
+    "year": 2016,
+    "doi": "10.1155/2016/4879283",
+    "abstract": "This study explores the capacity of the improved empirical mode decomposition (EMD) in railway wheel flat detection. Aiming at the mode mixing problem of EMD, an EMD energy conservation theory and an intrinsic mode function (IMF) superposition theory are presented and derived, respectively. Based on the above two theories, an improved EMD method is further proposed. The advantage of the improved EMD is evaluated by a simulated vibration signal. Then this method is applied to study the axle box vibration response caused by wheel flats, considering the influence of both track irregularity and vehicle running speed on diagnosis results. Finally, the effectiveness of the proposed method is verified by a test rig experiment. Research results demonstrate that the improved EMD can inhibit mode mixing phenomenon and extract the wheel fault characteristic effectively."
+  }
+]
